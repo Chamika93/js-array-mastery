@@ -1,0 +1,45 @@
+{
+  "title": "Age Accumilator",
+  "functionName": "ageAccumilator",
+  "testCases": [
+    {
+      "input": [
+        {
+          "name": "Person 1",
+          "age": 10
+        },
+        {
+          "name": "Person 2",
+          "age": 21
+        },
+        {
+          "name": "Person 3",
+          "age": 31
+        },
+        {
+          "name": "Person 4",
+          "age": 1
+        },
+        {
+          "name": "Person 5",
+          "age": 61
+        }
+      ],
+      "output": 113
+    }
+  ],
+  "body": {
+    "raw": "\n\nGiven an array with objects of 2 fields name and age return the sum of all ages equal or above 18.\n\n\nFor example, \n```js\n[{ name: \"Person 1\", age: 10 }, \n{ name: \"Person 2\", age: 21 },\n{ name: \"Person 3\", age: 31 },\n{ name: \"Person 4\", age: 1 },\n{name: \"Person 5\", age: 61 }]\n```\n\nshould return 113.\n",
+    "html": "<p>Given an array with objects of 2 fields name and age return the sum of all ages equal or above 18.</p>\n<p>For example,</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 1\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 2\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">21</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 3\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">31</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 4\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">1</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span><span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 5\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">61</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return 113.</p>"
+  },
+  "_id": "challenge-3.md",
+  "_raw": {
+    "sourceFilePath": "challenge-3.md",
+    "sourceFileName": "challenge-3.md",
+    "sourceFileDir": ".",
+    "contentType": "markdown",
+    "flattenedPath": "challenge-3"
+  },
+  "type": "Challenges",
+  "slug": "challenge-3"
+}

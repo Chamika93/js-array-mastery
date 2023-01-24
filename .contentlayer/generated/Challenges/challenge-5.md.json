@@ -1,0 +1,71 @@
+{
+  "title": "Rating Calculator",
+  "functionName": "ratingCalculator",
+  "testCases": [
+    {
+      "input": [
+        {
+          "hotelName": "hotel 1",
+          "totalRatings": 10,
+          "numberOfRatings": 2
+        },
+        {
+          "hotelName": "hotel 1",
+          "totalRatings": 30,
+          "numberOfRatings": 10
+        },
+        {
+          "hotelName": "hotel 1",
+          "totalRatings": 40,
+          "numberOfRatings": 10
+        },
+        {
+          "hotelName": "hotel 1",
+          "totalRatings": 10,
+          "numberOfRatings": 10
+        },
+        {
+          "hotelName": "hotel 1",
+          "totalRatings": 21,
+          "numberOfRatings": 7
+        }
+      ],
+      "output": [
+        {
+          "hotelName": "hotel 1",
+          "rating": 5
+        },
+        {
+          "hotelName": "hotel 1",
+          "rating": 3
+        },
+        {
+          "hotelName": "hotel 1",
+          "rating": 4
+        },
+        {
+          "hotelName": "hotel 1",
+          "rating": 1
+        },
+        {
+          "hotelName": "hotel 1",
+          "rating": 3
+        }
+      ]
+    }
+  ],
+  "body": {
+    "raw": "\n\nGiven an array of objects contain hotel name, total rating points, number of ratings return an array of objects contain hotel name and average rating value.\n\nFor example, ```[{ hotelName: \"hotel 1\", totalRatings: 10 , numberOfRatings: 2 },{ hotelName: \"hotel 1\", totalRatings: 30 , numberOfRatings: 10 },{ hotelName: \"hotel 1\", totalRatings: 40 , numberOfRatings: 10 },{ hotelName: \"hotel 1\", totalRatings: 10 , numberOfRatings: 10 },{hotelName: \"hotel 1\", totalRatings: 21 , numberOfRatings: 7 }]```, \nshould return ```[{ hotelName: \"hotel 1\", rating: 5 },{ hotelName: \"hotel 1\", rating: 3 },{ hotelName: \"hotel 1\", rating: 4 },{ hotelName:\"hotel 1\", rating: 1 },{ hotelName: \"hotel 1\", rating: 3 }]```.",
+    "html": "<p>Given an array of objects contain hotel name, total rating points, number of ratings return an array of objects contain hotel name and average rating value.</p>\n<p>For example, <code>[{ hotelName: \"hotel 1\", totalRatings: 10 , numberOfRatings: 2 },{ hotelName: \"hotel 1\", totalRatings: 30 , numberOfRatings: 10 },{ hotelName: \"hotel 1\", totalRatings: 40 , numberOfRatings: 10 },{ hotelName: \"hotel 1\", totalRatings: 10 , numberOfRatings: 10 },{hotelName: \"hotel 1\", totalRatings: 21 , numberOfRatings: 7 }]</code>,\nshould return <code>[{ hotelName: \"hotel 1\", rating: 5 },{ hotelName: \"hotel 1\", rating: 3 },{ hotelName: \"hotel 1\", rating: 4 },{ hotelName:\"hotel 1\", rating: 1 },{ hotelName: \"hotel 1\", rating: 3 }]</code>.</p>"
+  },
+  "_id": "challenge-5.md",
+  "_raw": {
+    "sourceFilePath": "challenge-5.md",
+    "sourceFileName": "challenge-5.md",
+    "sourceFileDir": ".",
+    "contentType": "markdown",
+    "flattenedPath": "challenge-5"
+  },
+  "type": "Challenges",
+  "slug": "challenge-5"
+}

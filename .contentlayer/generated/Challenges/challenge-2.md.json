@@ -1,0 +1,41 @@
+{
+  "title": "Letter multiple occurance",
+  "functionName": "stringChecker",
+  "testCases": [
+    {
+      "input": [
+        "c",
+        "r",
+        "a",
+        "t",
+        "e"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "b",
+        "a",
+        "n",
+        "a",
+        "n",
+        "a"
+      ],
+      "output": false
+    }
+  ],
+  "body": {
+    "raw": "\n\nCreate a function to return true if an array of letters does not contain same letter more than one time.\n\nFor example `[’c’, ‘o’, ‘n’, ‘v’, ‘i’, ‘n’, ‘c’, ‘e’]` should return `true` and `[’b’ ,‘a’, ‘n’, ‘a’, ‘n’, ‘a’]` should return `false`\n\nwithout using for loop.",
+    "html": "<p>Create a function to return true if an array of letters does not contain same letter more than one time.</p>\n<p>For example <code>[’c’, ‘o’, ‘n’, ‘v’, ‘i’, ‘n’, ‘c’, ‘e’]</code> should return <code>true</code> and <code>[’b’ ,‘a’, ‘n’, ‘a’, ‘n’, ‘a’]</code> should return <code>false</code></p>\n<p>without using for loop.</p>"
+  },
+  "_id": "challenge-2.md",
+  "_raw": {
+    "sourceFilePath": "challenge-2.md",
+    "sourceFileName": "challenge-2.md",
+    "sourceFileDir": ".",
+    "contentType": "markdown",
+    "flattenedPath": "challenge-2"
+  },
+  "type": "Challenges",
+  "slug": "challenge-2"
+}
