@@ -24,4 +24,4 @@ For example,
 {name: "Person 5", age: 61 }]
 ```
 
-should return 113.
+should return **113**.

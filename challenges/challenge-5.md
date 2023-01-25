@@ -21,5 +21,43 @@ testCases:
 
 Given an array of objects contain hotel name, total rating points, number of ratings return an array of objects contain hotel name and average rating value.
 
-For example, ```[{ hotelName: "hotel 1", totalRatings: 10 , numberOfRatings: 2 },{ hotelName: "hotel 1", totalRatings: 30 , numberOfRatings: 10 },{ hotelName: "hotel 1", totalRatings: 40 , numberOfRatings: 10 },{ hotelName: "hotel 1", totalRatings: 10 , numberOfRatings: 10 },{hotelName: "hotel 1", totalRatings: 21 , numberOfRatings: 7 }]```, 
-should return ```[{ hotelName: "hotel 1", rating: 5 },{ hotelName: "hotel 1", rating: 3 },{ hotelName: "hotel 1", rating: 4 },{ hotelName:"hotel 1", rating: 1 },{ hotelName: "hotel 1", rating: 3 }]```.
+For example, 
+```js
+[
+    { 
+        hotelName: "hotel 1", 
+        totalRatings: 10 , 
+        numberOfRatings: 2 
+    },
+    { 
+        hotelName: "hotel 2", 
+        totalRatings: 30 , 
+        numberOfRatings: 10 
+    },
+    { 
+        hotelName: "hotel 3",
+        totalRatings: 40 ,
+        numberOfRatings: 10 
+    },
+    { 
+        hotelName: "hotel 4",
+        totalRatings: 10,
+        numberOfRatings: 10 
+    },
+    {
+        hotelName: "hotel 5",
+        totalRatings: 21,
+        numberOfRatings: 7 
+    }
+]
+``` 
+should return 
+```js
+[
+    { hotelName:"hotel 1", rating: 5 },
+    { hotelName:"hotel 2", rating: 3 },
+    { hotelName:"hotel 3", rating: 4 },
+    { hotelName:"hotel 4", rating: 1 },
+    { hotelName:"hotel 5", rating: 3 }
+]
+```

@@ -16,7 +16,7 @@ const  Console = ({result,testCases,hasForLoop}) => {
     return (
       <div>
         <p className='mt-4'>Your Output</p>
-        <div className='bg-light-grey mt-4 px-4'>
+        <div className='bg-slate-100 mt-4 px-4'>
         {
             <div> 
               <span className='pr-2 w- text-mid-grey border-r-[1px]'>0</span>
@@ -25,7 +25,7 @@ const  Console = ({result,testCases,hasForLoop}) => {
         }
         </div>
         <p className='mt-4'>Log</p>
-        <div className='bg-light-grey mt-4 px-4'>
+        <div className='bg-slate-100 mt-4 px-4'>
         {
             result[selectedTestIndex]?.logs?.map((log, index) => (
             <div className='flex'> 
@@ -61,12 +61,12 @@ const  Console = ({result,testCases,hasForLoop}) => {
       </div>
       {
         result[selectedTestIndex]?.error ?
-        <div className='bg-light-grey mt-4 p-4'> 
+        <div className='bg-slate-100 mt-4 p-4'> 
           <span className='text-danger'> Error: { result[selectedTestIndex].error.message  }</span>
         </div> : <></>
       }
       <p className='mt-4'>Input</p>
-      <div className='bg-light-grey mt-4 px-4'>
+      <div className='bg-slate-100 mt-4 px-4'>
       {
           <div> 
             <span className='pr-2 text-mid-grey border-r-[1px]'>0</span>
@@ -75,7 +75,7 @@ const  Console = ({result,testCases,hasForLoop}) => {
       }
       </div>
       <p className='mt-4'>Expected Output</p>
-      <div className='bg-light-grey mt-4 px-4'>
+      <div className='bg-slate-100 mt-4 px-4'>
       {
           <div> 
             <span className='pr-2 text-mid-grey border-r-[1px]'>0</span>

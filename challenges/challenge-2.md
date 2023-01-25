@@ -9,6 +9,12 @@ testCases:
 
 Create a function to return true if an array of letters does not contain same letter more than one time.
 
-For example `[’c’, ‘o’, ‘n’, ‘v’, ‘i’, ‘n’, ‘c’, ‘e’]` should return `true` and `[’b’ ,‘a’, ‘n’, ‘a’, ‘n’, ‘a’]` should return `false`
-
-without using for loop.
+For example 
+```js
+['c', 'o', 'n', 'v', 'i', 'n', 'c', 'e']
+``` 
+should <span class="flex">return **true** and 
+```js
+['b' ,'a', 'n', 'a', 'n', 'a']
+``` 
+should return **false**. without using for loop.

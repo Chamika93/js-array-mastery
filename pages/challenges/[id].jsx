@@ -61,9 +61,9 @@ export default function Post({ post }) {
       <Head>
         <title>{post.title}</title>
       </Head>
-      <div className='flex h-full'>
+      <div className='flex min-h-screen'>
         <Description body={post.body} title={post.title} />
-        <div className='w-full'>
+        <div className='w-full h-full'>
           <CodeEditor code={code} setCode={setCode} />
           <div className='flex justify-end text-white py-2 px-2 bg-light-blue'>
             <button onClick={handleRunClick} className='py-[9.6px] px-[14.4px] bg-secondary rounded-md mr-2'>Run Code</button>
