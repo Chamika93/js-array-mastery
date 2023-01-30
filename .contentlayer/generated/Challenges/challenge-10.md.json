@@ -1,0 +1,82 @@
+{
+  "title": "Count A s",
+  "functionName": "countLetterA",
+  "testCases": [
+    {
+      "input": [
+        "apple",
+        "banana",
+        "cherry",
+        "dates",
+        "elderberry"
+      ],
+      "output": 5
+    },
+    {
+      "input": [
+        "kangaroo",
+        "lion",
+        "moose",
+        "nachos",
+        "oasis",
+        "puma",
+        "quiche",
+        "robin",
+        "sunflower",
+        "tulip"
+      ],
+      "output": 5
+    },
+    {
+      "input": [
+        "zebra",
+        "xylophone",
+        "yak",
+        "wombat",
+        "vulture"
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        "umbrella",
+        "turtle",
+        "sphinx",
+        "raccoon",
+        "queen",
+        "peacock"
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        "octopus",
+        "nest",
+        "mouse",
+        "lighthouse",
+        "kangaroo",
+        "jaguar",
+        "igloo",
+        "hot air balloon",
+        "giraffe",
+        "flamingo",
+        "elephant"
+      ],
+      "output": 9
+    }
+  ],
+  "body": {
+    "raw": "\nYou need to create a function which takes array of words then returns the number of times letter A used in all the words in that array.\n\n ```js\nconst array = [\n    \"apple\", \n    \"banana\",\n    \"cherry\",\n    \"dates\",\n    \"elderberry\"\n    ];\n ``` \n should return **4**\n",
+    "html": "<p>You need to create a function which takes array of words then returns the number of times letter A used in all the words in that array.</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token keyword\">const</span> array <span class=\"token operator\">=</span> <span class=\"token punctuation\">[</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"apple\"</span><span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">   <span class=\"token string\">\"banana\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"cherry\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"dates\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"elderberry\"</span>\n</span><span class=\"code-line\">   <span class=\"token punctuation\">]</span><span class=\"token punctuation\">;</span>\n</span></code></pre>\n<p>should return <strong>4</strong></p>"
+  },
+  "_id": "challenge-10.md",
+  "_raw": {
+    "sourceFilePath": "challenge-10.md",
+    "sourceFileName": "challenge-10.md",
+    "sourceFileDir": ".",
+    "contentType": "markdown",
+    "flattenedPath": "challenge-10"
+  },
+  "type": "Challenges",
+  "slug": "challenge-10"
+}

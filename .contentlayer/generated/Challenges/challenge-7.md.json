@@ -1,0 +1,199 @@
+{
+  "title": "Total product calculator",
+  "functionName": "productCalculator",
+  "testCases": [
+    {
+      "input": {
+        "product1": [
+          10,
+          15,
+          20,
+          25,
+          30
+        ],
+        "product2": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ],
+        "product3": [
+          15,
+          20,
+          25,
+          30,
+          35
+        ],
+        "product4": [
+          20,
+          25,
+          30,
+          35,
+          40
+        ]
+      },
+      "output": 450
+    },
+    {
+      "input": {
+        "productA": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ],
+        "productB": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ],
+        "productC": [
+          3,
+          6,
+          9,
+          12,
+          15
+        ],
+        "productD": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ],
+        "productE": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      },
+      "output": 235
+    },
+    {
+      "input": {
+        "item1": [
+          100,
+          150,
+          200,
+          250,
+          300
+        ],
+        "item2": [
+          50,
+          100,
+          150,
+          200,
+          250
+        ],
+        "item3": [
+          150,
+          200,
+          250,
+          300,
+          350
+        ],
+        "item4": [
+          200,
+          250,
+          300,
+          350,
+          400
+        ]
+      },
+      "output": 4500
+    },
+    {
+      "input": {
+        "productX": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ],
+        "productY": [
+          10,
+          15,
+          20,
+          25,
+          30
+        ],
+        "productZ": [
+          15,
+          20,
+          25,
+          30,
+          35
+        ],
+        "productW": [
+          20,
+          25,
+          30,
+          35,
+          40
+        ]
+      },
+      "output": 450
+    },
+    {
+      "input": {
+        "gadget1": [
+          20,
+          40,
+          60,
+          80,
+          100
+        ],
+        "gadget2": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ],
+        "gadget3": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ],
+        "gadget4": [
+          30,
+          60,
+          90,
+          120,
+          150
+        ],
+        "gadget5": [
+          25,
+          50,
+          75,
+          100,
+          125
+        ]
+      },
+      "output": 1350
+    }
+  ],
+  "body": {
+    "raw": "\nYou have an object where keys represent a product and value of the key is an array.  Each array has 5 numbers representing sales of the\nproduct in last 5 days. Your task is to create an function that returns the total number of sales.\n\n ```js\nconst salesData1 = {\n  product1: [10, 15, 20, 25, 30],\n  product2: [5, 10, 15, 20, 25],\n  product3: [15, 20, 25, 30, 35],\n  product4: [20, 25, 30, 35, 40]\n};\n ``` \n should return **120**\n\n",
+    "html": "<p>You have an object where keys represent a product and value of the key is an array.  Each array has 5 numbers representing sales of the\nproduct in last 5 days. Your task is to create an function that returns the total number of sales.</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token keyword\">const</span> salesData1 <span class=\"token operator\">=</span> <span class=\"token punctuation\">{</span>\n</span><span class=\"code-line\"> <span class=\"token literal-property property\">product1</span><span class=\"token operator\">:</span> <span class=\"token punctuation\">[</span><span class=\"token number\">10</span><span class=\"token punctuation\">,</span> <span class=\"token number\">15</span><span class=\"token punctuation\">,</span> <span class=\"token number\">20</span><span class=\"token punctuation\">,</span> <span class=\"token number\">25</span><span class=\"token punctuation\">,</span> <span class=\"token number\">30</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"> <span class=\"token literal-property property\">product2</span><span class=\"token operator\">:</span> <span class=\"token punctuation\">[</span><span class=\"token number\">5</span><span class=\"token punctuation\">,</span> <span class=\"token number\">10</span><span class=\"token punctuation\">,</span> <span class=\"token number\">15</span><span class=\"token punctuation\">,</span> <span class=\"token number\">20</span><span class=\"token punctuation\">,</span> <span class=\"token number\">25</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"> <span class=\"token literal-property property\">product3</span><span class=\"token operator\">:</span> <span class=\"token punctuation\">[</span><span class=\"token number\">15</span><span class=\"token punctuation\">,</span> <span class=\"token number\">20</span><span class=\"token punctuation\">,</span> <span class=\"token number\">25</span><span class=\"token punctuation\">,</span> <span class=\"token number\">30</span><span class=\"token punctuation\">,</span> <span class=\"token number\">35</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"> <span class=\"token literal-property property\">product4</span><span class=\"token operator\">:</span> <span class=\"token punctuation\">[</span><span class=\"token number\">20</span><span class=\"token punctuation\">,</span> <span class=\"token number\">25</span><span class=\"token punctuation\">,</span> <span class=\"token number\">30</span><span class=\"token punctuation\">,</span> <span class=\"token number\">35</span><span class=\"token punctuation\">,</span> <span class=\"token number\">40</span><span class=\"token punctuation\">]</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">}</span><span class=\"token punctuation\">;</span>\n</span></code></pre>\n<p>should return <strong>120</strong></p>"
+  },
+  "_id": "challenge-7.md",
+  "_raw": {
+    "sourceFilePath": "challenge-7.md",
+    "sourceFileName": "challenge-7.md",
+    "sourceFileDir": ".",
+    "contentType": "markdown",
+    "flattenedPath": "challenge-7"
+  },
+  "type": "Challenges",
+  "slug": "challenge-7"
+}

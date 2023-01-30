@@ -28,7 +28,7 @@ const  Console = ({result,testCases,hasForLoop}) => {
             result[selectedTestIndex]?.logs?.map((log, index) => (
             <div className='flex'> 
               <div className='w-[15px] text-mid-grey border-r-[1px]'>{index}</div>
-              <div className='pl-2'>{log}</div>
+              <div className='pl-2'>{typeof log === 'object' ?  JSON.stringify(log) : log }</div>
             </div>
             )
           )

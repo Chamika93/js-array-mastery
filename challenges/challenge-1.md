@@ -1,6 +1,6 @@
 ---
-title: 'Filter array'
-functionName: 'stringChecker'
+title: 'Similar Words'
+functionName: 'containsAllLetters'
 testCases:
     - {input: ["Hey", "hey"], output: true}
     - {input: ["Alien", "line"], output: true}

@@ -5,5 +5,10 @@ import challenge_2Md from './challenge-2.md.json'
 import challenge_3Md from './challenge-3.md.json'
 import challenge_4Md from './challenge-4.md.json'
 import challenge_5Md from './challenge-5.md.json'
+import challenge_6Md from './challenge-6.md.json'
+import challenge_7Md from './challenge-7.md.json'
+import challenge_8Md from './challenge-8.md.json'
+import challenge_9Md from './challenge-9.md.json'
+import challenge_10Md from './challenge-10.md.json'
 
-export const allChallenges = [challenge_1Md, challenge_2Md, challenge_3Md, challenge_4Md, challenge_5Md]
+export const allChallenges = [challenge_1Md, challenge_2Md, challenge_3Md, challenge_4Md, challenge_5Md, challenge_6Md, challenge_7Md, challenge_8Md, challenge_9Md, challenge_10Md]

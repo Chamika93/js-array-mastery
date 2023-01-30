@@ -1,7 +1,7 @@
 [
   {
-    "title": "Filter array",
-    "functionName": "stringChecker",
+    "title": "Similar Words",
+    "functionName": "containsAllLetters",
     "testCases": [
       {
         "input": [
@@ -735,5 +735,906 @@
     },
     "type": "Challenges",
     "slug": "challenge-5"
+  },
+  {
+    "title": "Photo noice Remover",
+    "functionName": "pixelFilter",
+    "testCases": [
+      {
+        "input": [
+          [
+            255,
+            128,
+            64,
+            32,
+            16
+          ],
+          [
+            128,
+            64,
+            32,
+            16,
+            8
+          ],
+          [
+            64,
+            32,
+            16,
+            8,
+            4
+          ],
+          [
+            32,
+            16,
+            8,
+            4,
+            2
+          ],
+          [
+            16,
+            8,
+            4,
+            2,
+            1
+          ]
+        ],
+        "output": [
+          [
+            255,
+            128,
+            64,
+            32,
+            16
+          ],
+          [
+            128,
+            64,
+            32,
+            16,
+            0
+          ],
+          [
+            64,
+            32,
+            16,
+            0,
+            0
+          ],
+          [
+            32,
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            16,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            15,
+            45,
+            79,
+            8,
+            22
+          ],
+          [
+            120,
+            13,
+            65,
+            110,
+            11
+          ],
+          [
+            23,
+            67,
+            128,
+            34,
+            72
+          ],
+          [
+            99,
+            78,
+            37,
+            7,
+            63
+          ],
+          [
+            34,
+            111,
+            92,
+            8,
+            48
+          ]
+        ],
+        "output": [
+          [
+            15,
+            45,
+            79,
+            0,
+            22
+          ],
+          [
+            120,
+            13,
+            65,
+            110,
+            11
+          ],
+          [
+            23,
+            67,
+            128,
+            34,
+            72
+          ],
+          [
+            99,
+            78,
+            37,
+            0,
+            63
+          ],
+          [
+            34,
+            111,
+            92,
+            0,
+            48
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            123,
+            7,
+            18,
+            75,
+            152
+          ],
+          [
+            100,
+            200,
+            50,
+            5,
+            175
+          ],
+          [
+            74,
+            150,
+            200,
+            25,
+            75
+          ],
+          [
+            90,
+            110,
+            2,
+            2,
+            200
+          ],
+          [
+            200,
+            7,
+            125,
+            75,
+            50
+          ]
+        ],
+        "output": [
+          [
+            123,
+            0,
+            18,
+            75,
+            152
+          ],
+          [
+            100,
+            200,
+            50,
+            0,
+            175
+          ],
+          [
+            74,
+            150,
+            200,
+            25,
+            75
+          ],
+          [
+            90,
+            110,
+            0,
+            0,
+            200
+          ],
+          [
+            200,
+            0,
+            125,
+            75,
+            50
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            255,
+            220,
+            4,
+            150,
+            115
+          ],
+          [
+            210,
+            3,
+            3,
+            3,
+            70
+          ],
+          [
+            165,
+            130,
+            6,
+            60,
+            25
+          ],
+          [
+            120,
+            7,
+            50,
+            15,
+            245
+          ],
+          [
+            75,
+            40,
+            5,
+            250,
+            9
+          ]
+        ],
+        "output": [
+          [
+            255,
+            220,
+            0,
+            150,
+            115
+          ],
+          [
+            210,
+            0,
+            0,
+            0,
+            70
+          ],
+          [
+            165,
+            130,
+            0,
+            60,
+            25
+          ],
+          [
+            120,
+            0,
+            50,
+            15,
+            245
+          ],
+          [
+            75,
+            40,
+            0,
+            250,
+            0
+          ]
+        ]
+      },
+      {
+        "input": [
+          [
+            200,
+            180,
+            160,
+            140,
+            120
+          ],
+          [
+            100,
+            1,
+            60,
+            40,
+            20
+          ],
+          [
+            180,
+            160,
+            1,
+            120,
+            100
+          ],
+          [
+            80,
+            60,
+            40,
+            1,
+            180
+          ],
+          [
+            160,
+            140,
+            120,
+            1,
+            80
+          ]
+        ],
+        "output": [
+          [
+            200,
+            180,
+            160,
+            140,
+            120
+          ],
+          [
+            100,
+            0,
+            60,
+            40,
+            20
+          ],
+          [
+            180,
+            160,
+            0,
+            120,
+            100
+          ],
+          [
+            80,
+            60,
+            40,
+            0,
+            180
+          ],
+          [
+            160,
+            140,
+            120,
+            0,
+            80
+          ]
+        ]
+      }
+    ],
+    "body": {
+      "raw": "\nYour task is to create a function that removes noice in photos. Input for the function is going to be a 2 dimensional array of pixels.\nThis function should replace pixels below 10 with 0.\n\n\n ```js\nlet inputPixelArray = [\n    [255, 128, 64, 32, 16],\n    [128, 64, 32, 16, 8],\n    [64, 32, 16, 8, 4],\n    [32, 16, 8, 4, 2],\n    [16, 8, 4, 2, 1]\n];\n ``` \n should return \n\n\n  ```js\nlet outputPixelArray = [\n    [255, 128, 64, 32, 16],\n    [128, 64, 32, 16, 8],\n    [64, 32, 16, 8, 0],\n    [32, 16, 8, 0, 0],\n    [16, 8, 0, 0, 0]\n];\n ``` \n\n",
+      "html": "<p>Your task is to create a function that removes noice in photos. Input for the function is going to be a 2 dimensional array of pixels.\nThis function should replace pixels below 10 with 0.</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token keyword\">let</span> inputPixelArray <span class=\"token operator\">=</span> <span class=\"token punctuation\">[</span>\n</span><span class=\"code-line\">   <span class=\"token punctuation\">[</span><span class=\"token number\">255</span><span class=\"token punctuation\">,</span> <span class=\"token number\">128</span><span class=\"token punctuation\">,</span> <span class=\"token number\">64</span><span class=\"token punctuation\">,</span> <span class=\"token number\">32</span><span class=\"token punctuation\">,</span> <span class=\"token number\">16</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token punctuation\">[</span><span class=\"token number\">128</span><span class=\"token punctuation\">,</span> <span class=\"token number\">64</span><span class=\"token punctuation\">,</span> <span class=\"token number\">32</span><span class=\"token punctuation\">,</span> <span class=\"token number\">16</span><span class=\"token punctuation\">,</span> <span class=\"token number\">8</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token punctuation\">[</span><span class=\"token number\">64</span><span class=\"token punctuation\">,</span> <span class=\"token number\">32</span><span class=\"token punctuation\">,</span> <span class=\"token number\">16</span><span class=\"token punctuation\">,</span> <span class=\"token number\">8</span><span class=\"token punctuation\">,</span> <span class=\"token number\">4</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token punctuation\">[</span><span class=\"token number\">32</span><span class=\"token punctuation\">,</span> <span class=\"token number\">16</span><span class=\"token punctuation\">,</span> <span class=\"token number\">8</span><span class=\"token punctuation\">,</span> <span class=\"token number\">4</span><span class=\"token punctuation\">,</span> <span class=\"token number\">2</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token punctuation\">[</span><span class=\"token number\">16</span><span class=\"token punctuation\">,</span> <span class=\"token number\">8</span><span class=\"token punctuation\">,</span> <span class=\"token number\">4</span><span class=\"token punctuation\">,</span> <span class=\"token number\">2</span><span class=\"token punctuation\">,</span> <span class=\"token number\">1</span><span class=\"token punctuation\">]</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">]</span><span class=\"token punctuation\">;</span>\n</span></code></pre>\n<p>should return</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token keyword\">let</span> outputPixelArray <span class=\"token operator\">=</span> <span class=\"token punctuation\">[</span>\n</span><span class=\"code-line\">  <span class=\"token punctuation\">[</span><span class=\"token number\">255</span><span class=\"token punctuation\">,</span> <span class=\"token number\">128</span><span class=\"token punctuation\">,</span> <span class=\"token number\">64</span><span class=\"token punctuation\">,</span> <span class=\"token number\">32</span><span class=\"token punctuation\">,</span> <span class=\"token number\">16</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">  <span class=\"token punctuation\">[</span><span class=\"token number\">128</span><span class=\"token punctuation\">,</span> <span class=\"token number\">64</span><span class=\"token punctuation\">,</span> <span class=\"token number\">32</span><span class=\"token punctuation\">,</span> <span class=\"token number\">16</span><span class=\"token punctuation\">,</span> <span class=\"token number\">8</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">  <span class=\"token punctuation\">[</span><span class=\"token number\">64</span><span class=\"token punctuation\">,</span> <span class=\"token number\">32</span><span class=\"token punctuation\">,</span> <span class=\"token number\">16</span><span class=\"token punctuation\">,</span> <span class=\"token number\">8</span><span class=\"token punctuation\">,</span> <span class=\"token number\">0</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">  <span class=\"token punctuation\">[</span><span class=\"token number\">32</span><span class=\"token punctuation\">,</span> <span class=\"token number\">16</span><span class=\"token punctuation\">,</span> <span class=\"token number\">8</span><span class=\"token punctuation\">,</span> <span class=\"token number\">0</span><span class=\"token punctuation\">,</span> <span class=\"token number\">0</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">  <span class=\"token punctuation\">[</span><span class=\"token number\">16</span><span class=\"token punctuation\">,</span> <span class=\"token number\">8</span><span class=\"token punctuation\">,</span> <span class=\"token number\">0</span><span class=\"token punctuation\">,</span> <span class=\"token number\">0</span><span class=\"token punctuation\">,</span> <span class=\"token number\">0</span><span class=\"token punctuation\">]</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">]</span><span class=\"token punctuation\">;</span>\n</span></code></pre>"
+    },
+    "_id": "challenge-6.md",
+    "_raw": {
+      "sourceFilePath": "challenge-6.md",
+      "sourceFileName": "challenge-6.md",
+      "sourceFileDir": ".",
+      "contentType": "markdown",
+      "flattenedPath": "challenge-6"
+    },
+    "type": "Challenges",
+    "slug": "challenge-6"
+  },
+  {
+    "title": "Total product calculator",
+    "functionName": "productCalculator",
+    "testCases": [
+      {
+        "input": {
+          "product1": [
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "product2": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "product3": [
+            15,
+            20,
+            25,
+            30,
+            35
+          ],
+          "product4": [
+            20,
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        "output": 450
+      },
+      {
+        "input": {
+          "productA": [
+            1,
+            3,
+            5,
+            7,
+            9
+          ],
+          "productB": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "productC": [
+            3,
+            6,
+            9,
+            12,
+            15
+          ],
+          "productD": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "productE": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        },
+        "output": 235
+      },
+      {
+        "input": {
+          "item1": [
+            100,
+            150,
+            200,
+            250,
+            300
+          ],
+          "item2": [
+            50,
+            100,
+            150,
+            200,
+            250
+          ],
+          "item3": [
+            150,
+            200,
+            250,
+            300,
+            350
+          ],
+          "item4": [
+            200,
+            250,
+            300,
+            350,
+            400
+          ]
+        },
+        "output": 4500
+      },
+      {
+        "input": {
+          "productX": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "productY": [
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "productZ": [
+            15,
+            20,
+            25,
+            30,
+            35
+          ],
+          "productW": [
+            20,
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        "output": 450
+      },
+      {
+        "input": {
+          "gadget1": [
+            20,
+            40,
+            60,
+            80,
+            100
+          ],
+          "gadget2": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "gadget3": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "gadget4": [
+            30,
+            60,
+            90,
+            120,
+            150
+          ],
+          "gadget5": [
+            25,
+            50,
+            75,
+            100,
+            125
+          ]
+        },
+        "output": 1350
+      }
+    ],
+    "body": {
+      "raw": "\nYou have an object where keys represent a product and value of the key is an array.  Each array has 5 numbers representing sales of the\nproduct in last 5 days. Your task is to create an function that returns the total number of sales.\n\n ```js\nconst salesData1 = {\n  product1: [10, 15, 20, 25, 30],\n  product2: [5, 10, 15, 20, 25],\n  product3: [15, 20, 25, 30, 35],\n  product4: [20, 25, 30, 35, 40]\n};\n ``` \n should return **120**\n\n",
+      "html": "<p>You have an object where keys represent a product and value of the key is an array.  Each array has 5 numbers representing sales of the\nproduct in last 5 days. Your task is to create an function that returns the total number of sales.</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token keyword\">const</span> salesData1 <span class=\"token operator\">=</span> <span class=\"token punctuation\">{</span>\n</span><span class=\"code-line\"> <span class=\"token literal-property property\">product1</span><span class=\"token operator\">:</span> <span class=\"token punctuation\">[</span><span class=\"token number\">10</span><span class=\"token punctuation\">,</span> <span class=\"token number\">15</span><span class=\"token punctuation\">,</span> <span class=\"token number\">20</span><span class=\"token punctuation\">,</span> <span class=\"token number\">25</span><span class=\"token punctuation\">,</span> <span class=\"token number\">30</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"> <span class=\"token literal-property property\">product2</span><span class=\"token operator\">:</span> <span class=\"token punctuation\">[</span><span class=\"token number\">5</span><span class=\"token punctuation\">,</span> <span class=\"token number\">10</span><span class=\"token punctuation\">,</span> <span class=\"token number\">15</span><span class=\"token punctuation\">,</span> <span class=\"token number\">20</span><span class=\"token punctuation\">,</span> <span class=\"token number\">25</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"> <span class=\"token literal-property property\">product3</span><span class=\"token operator\">:</span> <span class=\"token punctuation\">[</span><span class=\"token number\">15</span><span class=\"token punctuation\">,</span> <span class=\"token number\">20</span><span class=\"token punctuation\">,</span> <span class=\"token number\">25</span><span class=\"token punctuation\">,</span> <span class=\"token number\">30</span><span class=\"token punctuation\">,</span> <span class=\"token number\">35</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"> <span class=\"token literal-property property\">product4</span><span class=\"token operator\">:</span> <span class=\"token punctuation\">[</span><span class=\"token number\">20</span><span class=\"token punctuation\">,</span> <span class=\"token number\">25</span><span class=\"token punctuation\">,</span> <span class=\"token number\">30</span><span class=\"token punctuation\">,</span> <span class=\"token number\">35</span><span class=\"token punctuation\">,</span> <span class=\"token number\">40</span><span class=\"token punctuation\">]</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">}</span><span class=\"token punctuation\">;</span>\n</span></code></pre>\n<p>should return <strong>120</strong></p>"
+    },
+    "_id": "challenge-7.md",
+    "_raw": {
+      "sourceFilePath": "challenge-7.md",
+      "sourceFileName": "challenge-7.md",
+      "sourceFileDir": ".",
+      "contentType": "markdown",
+      "flattenedPath": "challenge-7"
+    },
+    "type": "Challenges",
+    "slug": "challenge-7"
+  },
+  {
+    "title": "Symmetric array finder",
+    "functionName": "symmetricArrayFinder",
+    "testCases": [
+      {
+        "input": [
+          12,
+          33,
+          6,
+          47,
+          58,
+          19,
+          84
+        ],
+        "output": false
+      },
+      {
+        "input": [
+          "dog",
+          "cat",
+          "bird",
+          "fish",
+          "bird",
+          "cat",
+          "dog"
+        ],
+        "output": true
+      },
+      {
+        "input": [
+          3,
+          17,
+          29,
+          43,
+          55,
+          67,
+          77,
+          89,
+          102,
+          120,
+          131
+        ],
+        "output": false
+      },
+      {
+        "input": [
+          "apple",
+          "banana",
+          "cherry",
+          "date",
+          "elderberry",
+          "date",
+          "cherry",
+          "banana",
+          "apple"
+        ],
+        "output": true
+      },
+      {
+        "input": [
+          7,
+          11,
+          14,
+          19,
+          22,
+          27,
+          31,
+          37,
+          41,
+          43,
+          47,
+          53,
+          59,
+          61,
+          67,
+          71,
+          73,
+          79,
+          83,
+          89,
+          97
+        ],
+        "output": false
+      }
+    ],
+    "body": {
+      "raw": "\nYour task is to find if an array is symmetric. In a symmetric array first element should be equal to the last element and second element\nshould be equal to the one before last\n\n ```js\nconst random = [12, 33, 6, 47, 58, 19, 84];\n ``` \n should return **false**\n\n ```js\nconst random = [\n    \"dog\", \n    \"cat\",\n    \"bird\",\n    \"fish\",\n    \"bird\",\n    \"cat\",\n    \"dog\"];\n ``` \n\n  should return **true**",
+      "html": "<p>Your task is to find if an array is symmetric. In a symmetric array first element should be equal to the last element and second element\nshould be equal to the one before last</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token keyword\">const</span> random <span class=\"token operator\">=</span> <span class=\"token punctuation\">[</span><span class=\"token number\">12</span><span class=\"token punctuation\">,</span> <span class=\"token number\">33</span><span class=\"token punctuation\">,</span> <span class=\"token number\">6</span><span class=\"token punctuation\">,</span> <span class=\"token number\">47</span><span class=\"token punctuation\">,</span> <span class=\"token number\">58</span><span class=\"token punctuation\">,</span> <span class=\"token number\">19</span><span class=\"token punctuation\">,</span> <span class=\"token number\">84</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">;</span>\n</span></code></pre>\n<p>should return <strong>false</strong></p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token keyword\">const</span> random <span class=\"token operator\">=</span> <span class=\"token punctuation\">[</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"dog\"</span><span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">   <span class=\"token string\">\"cat\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"bird\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"fish\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"bird\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"cat\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"dog\"</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">;</span>\n</span></code></pre>\n<p>should return <strong>true</strong></p>"
+    },
+    "_id": "challenge-8.md",
+    "_raw": {
+      "sourceFilePath": "challenge-8.md",
+      "sourceFileName": "challenge-8.md",
+      "sourceFileDir": ".",
+      "contentType": "markdown",
+      "flattenedPath": "challenge-8"
+    },
+    "type": "Challenges",
+    "slug": "challenge-8"
+  },
+  {
+    "title": "Most frequent number",
+    "functionName": "mostOccurredValue",
+    "testCases": [
+      {
+        "input": [
+          1,
+          2,
+          3,
+          4,
+          4,
+          5,
+          6,
+          7,
+          8,
+          4
+        ],
+        "output": 4
+      },
+      {
+        "input": [
+          122,
+          150,
+          200,
+          122,
+          199,
+          350,
+          399,
+          122,
+          300,
+          200,
+          199,
+          250,
+          399,
+          500,
+          400,
+          199,
+          200,
+          500,
+          250,
+          350
+        ],
+        "output": 122
+      },
+      {
+        "input": [
+          3,
+          17,
+          29,
+          43,
+          55,
+          67,
+          77,
+          89,
+          102,
+          43,
+          131
+        ],
+        "output": 43
+      },
+      {
+        "input": [
+          24,
+          56,
+          12,
+          56,
+          88,
+          24,
+          33,
+          88,
+          45,
+          56,
+          68,
+          45
+        ],
+        "output": 56
+      },
+      {
+        "input": [
+          1245,
+          1432,
+          1150,
+          1620,
+          1456,
+          1150,
+          1900,
+          1435,
+          1456,
+          1600,
+          1300,
+          1650,
+          1700,
+          1700,
+          1805,
+          1805,
+          1245,
+          1360,
+          1290,
+          1320,
+          1700,
+          1300
+        ],
+        "output": 1700
+      }
+    ],
+    "body": {
+      "raw": "\nYour task is to find  the most frequently occurring value in that array without using **for** loop or **forEach** method.\n\n ```js\nconst array = [1, 2, 3, 4, 4, 5, 6, 7, 8, 4];\n ``` \n should return **4**\n",
+      "html": "<p>Your task is to find  the most frequently occurring value in that array without using <strong>for</strong> loop or <strong>forEach</strong> method.</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token keyword\">const</span> array <span class=\"token operator\">=</span> <span class=\"token punctuation\">[</span><span class=\"token number\">1</span><span class=\"token punctuation\">,</span> <span class=\"token number\">2</span><span class=\"token punctuation\">,</span> <span class=\"token number\">3</span><span class=\"token punctuation\">,</span> <span class=\"token number\">4</span><span class=\"token punctuation\">,</span> <span class=\"token number\">4</span><span class=\"token punctuation\">,</span> <span class=\"token number\">5</span><span class=\"token punctuation\">,</span> <span class=\"token number\">6</span><span class=\"token punctuation\">,</span> <span class=\"token number\">7</span><span class=\"token punctuation\">,</span> <span class=\"token number\">8</span><span class=\"token punctuation\">,</span> <span class=\"token number\">4</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">;</span>\n</span></code></pre>\n<p>should return <strong>4</strong></p>"
+    },
+    "_id": "challenge-9.md",
+    "_raw": {
+      "sourceFilePath": "challenge-9.md",
+      "sourceFileName": "challenge-9.md",
+      "sourceFileDir": ".",
+      "contentType": "markdown",
+      "flattenedPath": "challenge-9"
+    },
+    "type": "Challenges",
+    "slug": "challenge-9"
+  },
+  {
+    "title": "Count A s",
+    "functionName": "countLetterA",
+    "testCases": [
+      {
+        "input": [
+          "apple",
+          "banana",
+          "cherry",
+          "dates",
+          "elderberry"
+        ],
+        "output": 5
+      },
+      {
+        "input": [
+          "kangaroo",
+          "lion",
+          "moose",
+          "nachos",
+          "oasis",
+          "puma",
+          "quiche",
+          "robin",
+          "sunflower",
+          "tulip"
+        ],
+        "output": 5
+      },
+      {
+        "input": [
+          "zebra",
+          "xylophone",
+          "yak",
+          "wombat",
+          "vulture"
+        ],
+        "output": 3
+      },
+      {
+        "input": [
+          "umbrella",
+          "turtle",
+          "sphinx",
+          "raccoon",
+          "queen",
+          "peacock"
+        ],
+        "output": 3
+      },
+      {
+        "input": [
+          "octopus",
+          "nest",
+          "mouse",
+          "lighthouse",
+          "kangaroo",
+          "jaguar",
+          "igloo",
+          "hot air balloon",
+          "giraffe",
+          "flamingo",
+          "elephant"
+        ],
+        "output": 9
+      }
+    ],
+    "body": {
+      "raw": "\nYou need to create a function which takes array of words then returns the number of times letter A used in all the words in that array.\n\n ```js\nconst array = [\n    \"apple\", \n    \"banana\",\n    \"cherry\",\n    \"dates\",\n    \"elderberry\"\n    ];\n ``` \n should return **4**\n",
+      "html": "<p>You need to create a function which takes array of words then returns the number of times letter A used in all the words in that array.</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token keyword\">const</span> array <span class=\"token operator\">=</span> <span class=\"token punctuation\">[</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"apple\"</span><span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">   <span class=\"token string\">\"banana\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"cherry\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"dates\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"elderberry\"</span>\n</span><span class=\"code-line\">   <span class=\"token punctuation\">]</span><span class=\"token punctuation\">;</span>\n</span></code></pre>\n<p>should return <strong>4</strong></p>"
+    },
+    "_id": "challenge-10.md",
+    "_raw": {
+      "sourceFilePath": "challenge-10.md",
+      "sourceFileName": "challenge-10.md",
+      "sourceFileDir": ".",
+      "contentType": "markdown",
+      "flattenedPath": "challenge-10"
+    },
+    "type": "Challenges",
+    "slug": "challenge-10"
   }
 ]

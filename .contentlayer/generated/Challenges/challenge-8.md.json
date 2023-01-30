@@ -1,0 +1,100 @@
+{
+  "title": "Symmetric array finder",
+  "functionName": "symmetricArrayFinder",
+  "testCases": [
+    {
+      "input": [
+        12,
+        33,
+        6,
+        47,
+        58,
+        19,
+        84
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "dog",
+        "cat",
+        "bird",
+        "fish",
+        "bird",
+        "cat",
+        "dog"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        3,
+        17,
+        29,
+        43,
+        55,
+        67,
+        77,
+        89,
+        102,
+        120,
+        131
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "apple",
+        "banana",
+        "cherry",
+        "date",
+        "elderberry",
+        "date",
+        "cherry",
+        "banana",
+        "apple"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        7,
+        11,
+        14,
+        19,
+        22,
+        27,
+        31,
+        37,
+        41,
+        43,
+        47,
+        53,
+        59,
+        61,
+        67,
+        71,
+        73,
+        79,
+        83,
+        89,
+        97
+      ],
+      "output": false
+    }
+  ],
+  "body": {
+    "raw": "\nYour task is to find if an array is symmetric. In a symmetric array first element should be equal to the last element and second element\nshould be equal to the one before last\n\n ```js\nconst random = [12, 33, 6, 47, 58, 19, 84];\n ``` \n should return **false**\n\n ```js\nconst random = [\n    \"dog\", \n    \"cat\",\n    \"bird\",\n    \"fish\",\n    \"bird\",\n    \"cat\",\n    \"dog\"];\n ``` \n\n  should return **true**",
+    "html": "<p>Your task is to find if an array is symmetric. In a symmetric array first element should be equal to the last element and second element\nshould be equal to the one before last</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token keyword\">const</span> random <span class=\"token operator\">=</span> <span class=\"token punctuation\">[</span><span class=\"token number\">12</span><span class=\"token punctuation\">,</span> <span class=\"token number\">33</span><span class=\"token punctuation\">,</span> <span class=\"token number\">6</span><span class=\"token punctuation\">,</span> <span class=\"token number\">47</span><span class=\"token punctuation\">,</span> <span class=\"token number\">58</span><span class=\"token punctuation\">,</span> <span class=\"token number\">19</span><span class=\"token punctuation\">,</span> <span class=\"token number\">84</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">;</span>\n</span></code></pre>\n<p>should return <strong>false</strong></p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token keyword\">const</span> random <span class=\"token operator\">=</span> <span class=\"token punctuation\">[</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"dog\"</span><span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">   <span class=\"token string\">\"cat\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"bird\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"fish\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"bird\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"cat\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">   <span class=\"token string\">\"dog\"</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">;</span>\n</span></code></pre>\n<p>should return <strong>true</strong></p>"
+  },
+  "_id": "challenge-8.md",
+  "_raw": {
+    "sourceFilePath": "challenge-8.md",
+    "sourceFileName": "challenge-8.md",
+    "sourceFileDir": ".",
+    "contentType": "markdown",
+    "flattenedPath": "challenge-8"
+  },
+  "type": "Challenges",
+  "slug": "challenge-8"
+}
