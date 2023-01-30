@@ -43,7 +43,15 @@ export default function Post({ post }) {
   const handleSubmit = () => {
     const executedResult = codeExecutor(code, post.testCases, post.functionName);
     setResult(executedResult);
-    const isSuccess = post.testCases.every(({output}, index) => output === executedResult[index].ans);
+    const isSuccess = post.testCases.every(({output}, index) => {
+      let outcome;
+      if(typeof output === 'object') {
+        outcome = JSON.stringify(output) === JSON.stringify(executedResult[index].ans)
+      } else {
+        outcome = (output === executedResult[index].ans);
+      }
+      return outcome;
+    });
     setSuccess(isSuccess)
     if(isSuccess) {
       let usedMethods = getMethods(code);
@@ -61,7 +69,7 @@ export default function Post({ post }) {
       <Head>
         <title>{post.title}</title>
       </Head>
-      <div className='flex min-h-screen'>
+      <div className='flex flex-col md:flex-row min-h-screen'>
         <Description body={post.body} title={post.title} />
         <div className='w-full h-full'>
           <CodeEditor code={code} setCode={setCode} />

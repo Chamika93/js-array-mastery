@@ -23,11 +23,25 @@
           "dog"
         ],
         "output": false
+      },
+      {
+        "input": [
+          "antidisestablishmentarianism",
+          "disestablishmentarianism"
+        ],
+        "output": true
+      },
+      {
+        "input": [
+          "counterdemonstration",
+          "counterproliferation"
+        ],
+        "output": false
       }
     ],
     "body": {
-      "raw": "\n\nReturn true if the string in the first element of the array contains all of the letters of the string in the second element of the array.\n\nFor example, \n```js\n[\"hello\", \"Hello\"]\n``` \nshould return true because all of the letters in the second string are present in the first, ignoring case.\n\nThe arguments \n```js\n[\"hello\", \"hey\"]\n``` \nshould return false because the string hello does not contain a y.\n\nLastly, `[\"Alien\", \"line\"]`, should return true because all of the letters in line are present in Alien.",
-      "html": "<p>Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.</p>\n<p>For example,</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span><span class=\"token string\">\"hello\"</span><span class=\"token punctuation\">,</span> <span class=\"token string\">\"Hello\"</span><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return true because all of the letters in the second string are present in the first, ignoring case.</p>\n<p>The arguments</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span><span class=\"token string\">\"hello\"</span><span class=\"token punctuation\">,</span> <span class=\"token string\">\"hey\"</span><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return false because the string hello does not contain a y.</p>\n<p>Lastly, <code>[\"Alien\", \"line\"]</code>, should return true because all of the letters in line are present in Alien.</p>"
+      "raw": "\nYour task is to create a function that takes an array of 2 strings as input and returns **true**\nif the first string of the array contains all of the letters in the second string of the array.\n\nFor example,\n\n```js\n[\"hello\", \"Hello\"]\n``` \n\nshould return **true** because all of the letters in the second string are present in the first, ignoring case.\n\n```js\n[\"hello\", \"hey\"]\n``` \nshould return **false** because the string hello does not contain a *y*. \n\nLastly, \n```js\n[\"Alien\", \"line\"]\n```\nshould return **true** because all of the letters in *line* are present in *Alien*.",
+      "html": "<p>Your task is to create a function that takes an array of 2 strings as input and returns <strong>true</strong>\nif the first string of the array contains all of the letters in the second string of the array.</p>\n<p>For example,</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span><span class=\"token string\">\"hello\"</span><span class=\"token punctuation\">,</span> <span class=\"token string\">\"Hello\"</span><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return <strong>true</strong> because all of the letters in the second string are present in the first, ignoring case.</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span><span class=\"token string\">\"hello\"</span><span class=\"token punctuation\">,</span> <span class=\"token string\">\"hey\"</span><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return <strong>false</strong> because the string hello does not contain a <em>y</em>.</p>\n<p>Lastly,</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span><span class=\"token string\">\"Alien\"</span><span class=\"token punctuation\">,</span> <span class=\"token string\">\"line\"</span><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return <strong>true</strong> because all of the letters in <em>line</em> are present in <em>Alien</em>.</p>"
     },
     "_id": "challenge-1.md",
     "_raw": {
@@ -52,7 +66,7 @@
           "t",
           "e"
         ],
-        "output": true
+        "output": false
       },
       {
         "input": [
@@ -63,12 +77,64 @@
           "n",
           "a"
         ],
+        "output": true
+      },
+      {
+        "input": [
+          "b",
+          "o",
+          "o",
+          "k",
+          "k",
+          "e",
+          "e",
+          "p",
+          "e",
+          "r"
+        ],
+        "output": true
+      },
+      {
+        "input": [
+          "s",
+          "u",
+          "b",
+          "c",
+          "o",
+          "m",
+          "m",
+          "i",
+          "t",
+          "t",
+          "e",
+          "e"
+        ],
+        "output": true
+      },
+      {
+        "input": [
+          "u",
+          "n",
+          "c",
+          "o",
+          "p",
+          "y",
+          "r",
+          "i",
+          "g",
+          "h",
+          "t",
+          "a",
+          "b",
+          "l",
+          "e"
+        ],
         "output": false
       }
     ],
     "body": {
-      "raw": "\n\nCreate a function to return true if an array of letters does not contain same letter more than one time.\n\nFor example \n```js\n['c', 'o', 'n', 'v', 'i', 'n', 'c', 'e']\n``` \nshould <span class=\"flex\">return **true** and \n```js\n['b' ,'a', 'n', 'a', 'n', 'a']\n``` \nshould return **false**. without using for loop.",
-      "html": "<p>Create a function to return true if an array of letters does not contain same letter more than one time.</p>\n<p>For example</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span><span class=\"token string\">'c'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'o'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'n'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'v'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'i'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'n'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'c'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'e'</span><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return <strong>true</strong> and</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span><span class=\"token string\">'b'</span> <span class=\"token punctuation\">,</span><span class=\"token string\">'a'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'n'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'a'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'n'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'a'</span><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return <strong>false</strong>. without using for loop.</p>"
+      "raw": "\n\nYour task is to create a function that return **true** if an array of letters contain same letter more than one time.\n\nFor example \n```js\n['c', 'o', 'n', 'v', 'i', 'n', 'c', 'e']\n``` \nshould <span class=\"flex\">return **false** and \n```js\n['b' ,'a', 'n', 'a', 'n', 'a']\n``` \nshould return **true**.",
+      "html": "<p>Your task is to create a function that return <strong>true</strong> if an array of letters contain same letter more than one time.</p>\n<p>For example</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span><span class=\"token string\">'c'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'o'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'n'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'v'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'i'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'n'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'c'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'e'</span><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return <strong>false</strong> and</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span><span class=\"token string\">'b'</span> <span class=\"token punctuation\">,</span><span class=\"token string\">'a'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'n'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'a'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'n'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'a'</span><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return <strong>true</strong>.</p>"
     },
     "_id": "challenge-2.md",
     "_raw": {
@@ -109,11 +175,123 @@
           }
         ],
         "output": 113
+      },
+      {
+        "input": [
+          {
+            "name": "Individual 1",
+            "age": 15
+          },
+          {
+            "name": "Individual 2",
+            "age": 25
+          },
+          {
+            "name": "Individual 3",
+            "age": 35
+          },
+          {
+            "name": "Individual 4",
+            "age": 20
+          },
+          {
+            "name": "Individual 5",
+            "age": 40
+          }
+        ],
+        "output": 120
+      },
+      {
+        "input": [
+          {
+            "name": "Person A",
+            "age": 30
+          },
+          {
+            "name": "Person B",
+            "age": 40
+          },
+          {
+            "name": "Person C",
+            "age": 50
+          },
+          {
+            "name": "Person D",
+            "age": 60
+          }
+        ],
+        "output": 180
+      },
+      {
+        "input": [
+          {
+            "name": "Individual 1",
+            "age": 18
+          },
+          {
+            "name": "Individual 2",
+            "age": 25
+          },
+          {
+            "name": "Individual 3",
+            "age": 32
+          },
+          {
+            "name": "Individual 4",
+            "age": 45
+          },
+          {
+            "name": "Individual 5",
+            "age": 55
+          },
+          {
+            "name": "Individual 6",
+            "age": 60
+          }
+        ],
+        "output": 235
+      },
+      {
+        "input": [
+          {
+            "name": "Person X",
+            "age": 20
+          },
+          {
+            "name": "Person Y",
+            "age": 25
+          },
+          {
+            "name": "Person Z",
+            "age": 30
+          },
+          {
+            "name": "Person P",
+            "age": 35
+          },
+          {
+            "name": "Person Q",
+            "age": 40
+          },
+          {
+            "name": "Person R",
+            "age": 45
+          },
+          {
+            "name": "Person S",
+            "age": 50
+          },
+          {
+            "name": "Person T",
+            "age": 55
+          }
+        ],
+        "output": 300
       }
     ],
     "body": {
-      "raw": "\n\nGiven an array with objects of 2 fields name and age return the sum of all ages equal or above 18.\n\n\nFor example, \n```js\n[{ name: \"Person 1\", age: 10 }, \n{ name: \"Person 2\", age: 21 },\n{ name: \"Person 3\", age: 31 },\n{ name: \"Person 4\", age: 1 },\n{name: \"Person 5\", age: 61 }]\n```\n\nshould return **113**.\n",
-      "html": "<p>Given an array with objects of 2 fields name and age return the sum of all ages equal or above 18.</p>\n<p>For example,</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 1\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 2\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">21</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 3\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">31</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 4\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">1</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span><span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 5\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">61</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return <strong>113</strong>.</p>"
+      "raw": "\nYour task is to create a function that take an array with objects where each object has 2 fields name and age, then return the sum of all ages equal or above 18.\n\nFor example\n```js\n[{ name: \"Person 1\", age: 10 }, \n{ name: \"Person 2\", age: 21 },\n{ name: \"Person 3\", age: 31 },\n{ name: \"Person 4\", age: 1 },\n{name: \"Person 5\", age: 61 }]\n```\n\\\nshould return **113**.\n",
+      "html": "<p>Your task is to create a function that take an array with objects where each object has 2 fields name and age, then return the sum of all ages equal or above 18.</p>\n<p>For example</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 1\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 2\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">21</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 3\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">31</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 4\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">1</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span><span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 5\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">61</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p><br>\nshould return <strong>113</strong>.</p>"
     },
     "_id": "challenge-3.md",
     "_raw": {
@@ -154,11 +332,123 @@
           }
         ],
         "output": false
+      },
+      {
+        "input": [
+          {
+            "name": "Individual 1",
+            "age": 15
+          },
+          {
+            "name": "Individual 2",
+            "age": 25
+          },
+          {
+            "name": "Individual 3",
+            "age": 35
+          },
+          {
+            "name": "Individual 4",
+            "age": 20
+          },
+          {
+            "name": "Individual 5",
+            "age": 40
+          }
+        ],
+        "output": false
+      },
+      {
+        "input": [
+          {
+            "name": "Person A",
+            "age": 30
+          },
+          {
+            "name": "Person B",
+            "age": 40
+          },
+          {
+            "name": "Person C",
+            "age": 50
+          },
+          {
+            "name": "Person D",
+            "age": 60
+          }
+        ],
+        "output": true
+      },
+      {
+        "input": [
+          {
+            "name": "Individual 1",
+            "age": 18
+          },
+          {
+            "name": "Individual 2",
+            "age": 25
+          },
+          {
+            "name": "Individual 3",
+            "age": 32
+          },
+          {
+            "name": "Individual 4",
+            "age": 45
+          },
+          {
+            "name": "Individual 5",
+            "age": 55
+          },
+          {
+            "name": "Individual 6",
+            "age": 60
+          }
+        ],
+        "output": true
+      },
+      {
+        "input": [
+          {
+            "name": "Person X",
+            "age": 20
+          },
+          {
+            "name": "Person Y",
+            "age": 25
+          },
+          {
+            "name": "Person Z",
+            "age": 14
+          },
+          {
+            "name": "Person P",
+            "age": 35
+          },
+          {
+            "name": "Person Q",
+            "age": 40
+          },
+          {
+            "name": "Person R",
+            "age": 45
+          },
+          {
+            "name": "Person S",
+            "age": 50
+          },
+          {
+            "name": "Person T",
+            "age": 55
+          }
+        ],
+        "output": false
       }
     ],
     "body": {
-      "raw": "\n\nGiven an array with objects of 2 fields name and age return true if all ages equal or above 18.\n\n ```js\n [{ name: \"Person 1\", age: 10 },\n { name: \"Person 2\", age: 21 },\n { name: \"Person 3\", age: 31 },\n { name: \"Person 4\", age: 1 },\n { name: \"Person 5\" age: 61 }]\n ``` \n should return **false**.\n\n",
-      "html": "<p>Given an array with objects of 2 fields name and age return true if all ages equal or above 18.</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 1\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 2\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">21</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 3\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">31</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 4\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">1</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 5\"</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">61</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return <strong>false</strong>.</p>"
+      "raw": "\nYour task is to create a function when Given an array with objects of 2 fields name and age then **return** true if all ages equal or above 18.\n\n ```js\n [{ name: \"Person 1\", age: 10 },\n { name: \"Person 2\", age: 21 },\n { name: \"Person 3\", age: 31 },\n { name: \"Person 4\", age: 1 },\n { name: \"Person 5\" age: 61 }]\n ``` \n should return **false**.\n\n",
+      "html": "<p>Your task is to create a function when Given an array with objects of 2 fields name and age then <strong>return</strong> true if all ages equal or above 18.</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 1\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 2\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">21</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 3\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">31</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 4\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">1</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 5\"</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">61</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return <strong>false</strong>.</p>"
     },
     "_id": "challenge-4.md",
     "_raw": {
@@ -183,22 +473,22 @@
             "numberOfRatings": 2
           },
           {
-            "hotelName": "hotel 1",
+            "hotelName": "hotel 2",
             "totalRatings": 30,
             "numberOfRatings": 10
           },
           {
-            "hotelName": "hotel 1",
+            "hotelName": "hotel 3",
             "totalRatings": 40,
             "numberOfRatings": 10
           },
           {
-            "hotelName": "hotel 1",
+            "hotelName": "hotel 4",
             "totalRatings": 10,
             "numberOfRatings": 10
           },
           {
-            "hotelName": "hotel 1",
+            "hotelName": "hotel 5",
             "totalRatings": 21,
             "numberOfRatings": 7
           }
@@ -209,27 +499,231 @@
             "rating": 5
           },
           {
-            "hotelName": "hotel 1",
+            "hotelName": "hotel 2",
             "rating": 3
           },
           {
-            "hotelName": "hotel 1",
+            "hotelName": "hotel 3",
             "rating": 4
           },
           {
-            "hotelName": "hotel 1",
+            "hotelName": "hotel 4",
             "rating": 1
           },
           {
-            "hotelName": "hotel 1",
+            "hotelName": "hotel 5",
             "rating": 3
+          }
+        ]
+      },
+      {
+        "input": [
+          {
+            "hotelName": "Hotel K",
+            "totalRatings": 2,
+            "numberOfRatings": 2
+          },
+          {
+            "hotelName": "Hotel L",
+            "totalRatings": 3,
+            "numberOfRatings": 3
+          },
+          {
+            "hotelName": "Hotel M",
+            "totalRatings": 4,
+            "numberOfRatings": 2
+          },
+          {
+            "hotelName": "Hotel N",
+            "totalRatings": 5,
+            "numberOfRatings": 1
+          },
+          {
+            "hotelName": "Hotel O",
+            "totalRatings": 1,
+            "numberOfRatings": 2
+          }
+        ],
+        "output": [
+          {
+            "hotelName": "Hotel K",
+            "rating": 1
+          },
+          {
+            "hotelName": "Hotel L",
+            "rating": 1
+          },
+          {
+            "hotelName": "Hotel M",
+            "rating": 2
+          },
+          {
+            "hotelName": "Hotel N",
+            "rating": 5
+          },
+          {
+            "hotelName": "Hotel O",
+            "rating": 0.5
+          }
+        ]
+      },
+      {
+        "input": [
+          {
+            "hotelName": "Hotel X",
+            "totalRatings": 27,
+            "numberOfRatings": 11
+          },
+          {
+            "hotelName": "Hotel Y",
+            "totalRatings": 35,
+            "numberOfRatings": 14
+          },
+          {
+            "hotelName": "Hotel Z",
+            "totalRatings": 44,
+            "numberOfRatings": 12
+          },
+          {
+            "hotelName": "Hotel W",
+            "totalRatings": 31,
+            "numberOfRatings": 11
+          },
+          {
+            "hotelName": "Hotel V",
+            "totalRatings": 25,
+            "numberOfRatings": 15
+          }
+        ],
+        "output": [
+          {
+            "hotelName": "Hotel X",
+            "rating": 2.4545454545454546
+          },
+          {
+            "hotelName": "Hotel Y",
+            "rating": 2.5
+          },
+          {
+            "hotelName": "Hotel Z",
+            "rating": 3.6666666666666665
+          },
+          {
+            "hotelName": "Hotel W",
+            "rating": 2.8181818181818183
+          },
+          {
+            "hotelName": "Hotel V",
+            "rating": 1.6666666666666667
+          }
+        ]
+      },
+      {
+        "input": [
+          {
+            "hotelName": "Hotel M",
+            "totalRatings": 45,
+            "numberOfRatings": 12
+          },
+          {
+            "hotelName": "Hotel N",
+            "totalRatings": 40,
+            "numberOfRatings": 15
+          },
+          {
+            "hotelName": "Hotel O",
+            "totalRatings": 36,
+            "numberOfRatings": 13
+          },
+          {
+            "hotelName": "Hotel P",
+            "totalRatings": 50,
+            "numberOfRatings": 12
+          },
+          {
+            "hotelName": "Hotel Q",
+            "totalRatings": 42,
+            "numberOfRatings": 14
+          }
+        ],
+        "output": [
+          {
+            "hotelName": "Hotel M",
+            "rating": 3.75
+          },
+          {
+            "hotelName": "Hotel N",
+            "rating": 2.6666666666666665
+          },
+          {
+            "hotelName": "Hotel O",
+            "rating": 2.769230769230769
+          },
+          {
+            "hotelName": "Hotel P",
+            "rating": 4.166666666666667
+          },
+          {
+            "hotelName": "Hotel Q",
+            "rating": 3
+          }
+        ]
+      },
+      {
+        "input": [
+          {
+            "hotelName": "Hotel R",
+            "totalRatings": 60,
+            "numberOfRatings": 15
+          },
+          {
+            "hotelName": "Hotel S",
+            "totalRatings": 55,
+            "numberOfRatings": 12
+          },
+          {
+            "hotelName": "Hotel T",
+            "totalRatings": 52,
+            "numberOfRatings": 13
+          },
+          {
+            "hotelName": "Hotel U",
+            "totalRatings": 50,
+            "numberOfRatings": 11
+          },
+          {
+            "hotelName": "Hotel V",
+            "totalRatings": 47,
+            "numberOfRatings": 14
+          }
+        ],
+        "output": [
+          {
+            "hotelName": "Hotel R",
+            "rating": 4
+          },
+          {
+            "hotelName": "Hotel S",
+            "rating": 4.583333333333333
+          },
+          {
+            "hotelName": "Hotel T",
+            "rating": 4
+          },
+          {
+            "hotelName": "Hotel U",
+            "rating": 4.545454545454546
+          },
+          {
+            "hotelName": "Hotel V",
+            "rating": 3.357142857142857
           }
         ]
       }
     ],
     "body": {
-      "raw": "\n\nGiven an array of objects contain hotel name, total rating points, number of ratings return an array of objects contain hotel name and average rating value.\n\nFor example, \n```js\n[\n    { \n        hotelName: \"hotel 1\", \n        totalRatings: 10 , \n        numberOfRatings: 2 \n    },\n    { \n        hotelName: \"hotel 2\", \n        totalRatings: 30 , \n        numberOfRatings: 10 \n    },\n    { \n        hotelName: \"hotel 3\",\n        totalRatings: 40 ,\n        numberOfRatings: 10 \n    },\n    { \n        hotelName: \"hotel 4\",\n        totalRatings: 10,\n        numberOfRatings: 10 \n    },\n    {\n        hotelName: \"hotel 5\",\n        totalRatings: 21,\n        numberOfRatings: 7 \n    }\n]\n``` \nshould return \n```js\n[\n    { hotelName:\"hotel 1\", rating: 5 },\n    { hotelName:\"hotel 2\", rating: 3 },\n    { hotelName:\"hotel 3\", rating: 4 },\n    { hotelName:\"hotel 4\", rating: 1 },\n    { hotelName:\"hotel 5\", rating: 3 }\n]\n```",
-      "html": "<p>Given an array of objects contain hotel name, total rating points, number of ratings return an array of objects contain hotel name and average rating value.</p>\n<p>For example,</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 1\"</span><span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> <span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">2</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 2\"</span><span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">30</span> <span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 3\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">40</span> <span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 4\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 5\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">21</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">7</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 1\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">5</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 2\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">3</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 3\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">4</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 4\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">1</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 5\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">3</span> <span class=\"token punctuation\">}</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">]</span>\n</span></code></pre>"
+      "raw": "\n\nYour task is to create a function which takes an array of objects contain hotel name, total rating points, number of ratings then return an array of objects contain hotel name and average rating value.\n\nFor example, \n```js\n[\n    { \n        hotelName: \"hotel 1\", \n        totalRatings: 10 , \n        numberOfRatings: 2 \n    },\n    { \n        hotelName: \"hotel 2\", \n        totalRatings: 30 , \n        numberOfRatings: 10 \n    },\n    { \n        hotelName: \"hotel 3\",\n        totalRatings: 40 ,\n        numberOfRatings: 10 \n    },\n    { \n        hotelName: \"hotel 4\",\n        totalRatings: 10,\n        numberOfRatings: 10 \n    },\n    {\n        hotelName: \"hotel 5\",\n        totalRatings: 21,\n        numberOfRatings: 7 \n    }\n]\n``` \nshould return \n```js\n[\n    { hotelName:\"hotel 1\", rating: 5 },\n    { hotelName:\"hotel 2\", rating: 3 },\n    { hotelName:\"hotel 3\", rating: 4 },\n    { hotelName:\"hotel 4\", rating: 1 },\n    { hotelName:\"hotel 5\", rating: 3 }\n]\n```",
+      "html": "<p>Your task is to create a function which takes an array of objects contain hotel name, total rating points, number of ratings then return an array of objects contain hotel name and average rating value.</p>\n<p>For example,</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 1\"</span><span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> <span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">2</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 2\"</span><span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">30</span> <span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 3\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">40</span> <span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 4\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 5\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">21</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">7</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 1\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">5</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 2\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">3</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 3\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">4</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 4\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">1</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 5\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">3</span> <span class=\"token punctuation\">}</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">]</span>\n</span></code></pre>"
     },
     "_id": "challenge-5.md",
     "_raw": {

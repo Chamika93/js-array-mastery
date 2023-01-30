@@ -26,11 +26,123 @@
         }
       ],
       "output": 113
+    },
+    {
+      "input": [
+        {
+          "name": "Individual 1",
+          "age": 15
+        },
+        {
+          "name": "Individual 2",
+          "age": 25
+        },
+        {
+          "name": "Individual 3",
+          "age": 35
+        },
+        {
+          "name": "Individual 4",
+          "age": 20
+        },
+        {
+          "name": "Individual 5",
+          "age": 40
+        }
+      ],
+      "output": 120
+    },
+    {
+      "input": [
+        {
+          "name": "Person A",
+          "age": 30
+        },
+        {
+          "name": "Person B",
+          "age": 40
+        },
+        {
+          "name": "Person C",
+          "age": 50
+        },
+        {
+          "name": "Person D",
+          "age": 60
+        }
+      ],
+      "output": 180
+    },
+    {
+      "input": [
+        {
+          "name": "Individual 1",
+          "age": 18
+        },
+        {
+          "name": "Individual 2",
+          "age": 25
+        },
+        {
+          "name": "Individual 3",
+          "age": 32
+        },
+        {
+          "name": "Individual 4",
+          "age": 45
+        },
+        {
+          "name": "Individual 5",
+          "age": 55
+        },
+        {
+          "name": "Individual 6",
+          "age": 60
+        }
+      ],
+      "output": 235
+    },
+    {
+      "input": [
+        {
+          "name": "Person X",
+          "age": 20
+        },
+        {
+          "name": "Person Y",
+          "age": 25
+        },
+        {
+          "name": "Person Z",
+          "age": 30
+        },
+        {
+          "name": "Person P",
+          "age": 35
+        },
+        {
+          "name": "Person Q",
+          "age": 40
+        },
+        {
+          "name": "Person R",
+          "age": 45
+        },
+        {
+          "name": "Person S",
+          "age": 50
+        },
+        {
+          "name": "Person T",
+          "age": 55
+        }
+      ],
+      "output": 300
     }
   ],
   "body": {
-    "raw": "\n\nGiven an array with objects of 2 fields name and age return the sum of all ages equal or above 18.\n\n\nFor example, \n```js\n[{ name: \"Person 1\", age: 10 }, \n{ name: \"Person 2\", age: 21 },\n{ name: \"Person 3\", age: 31 },\n{ name: \"Person 4\", age: 1 },\n{name: \"Person 5\", age: 61 }]\n```\n\nshould return **113**.\n",
-    "html": "<p>Given an array with objects of 2 fields name and age return the sum of all ages equal or above 18.</p>\n<p>For example,</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 1\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 2\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">21</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 3\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">31</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 4\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">1</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span><span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 5\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">61</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return <strong>113</strong>.</p>"
+    "raw": "\nYour task is to create a function that take an array with objects where each object has 2 fields name and age, then return the sum of all ages equal or above 18.\n\nFor example\n```js\n[{ name: \"Person 1\", age: 10 }, \n{ name: \"Person 2\", age: 21 },\n{ name: \"Person 3\", age: 31 },\n{ name: \"Person 4\", age: 1 },\n{name: \"Person 5\", age: 61 }]\n```\n\\\nshould return **113**.\n",
+    "html": "<p>Your task is to create a function that take an array with objects where each object has 2 fields name and age, then return the sum of all ages equal or above 18.</p>\n<p>For example</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 1\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 2\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">21</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 3\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">31</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 4\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">1</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">{</span><span class=\"token literal-property property\">name</span><span class=\"token operator\">:</span> <span class=\"token string\">\"Person 5\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">age</span><span class=\"token operator\">:</span> <span class=\"token number\">61</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p><br>\nshould return <strong>113</strong>.</p>"
   },
   "_id": "challenge-3.md",
   "_raw": {

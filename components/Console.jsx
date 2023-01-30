@@ -2,9 +2,7 @@ import React, { useState } from 'react'
 
 const  Console = ({result,testCases,hasForLoop}) => {
   const [ selectedTestIndex, setSelectedTestIndex ] = useState(0);
-    console.log('heyy', hasForLoop)
     if(hasForLoop){
-      console.log('here')
       return (
         <div className=' w-full bg-white rounded-md drop-shadow-sm p-5'>
             <p>Dont use a for loop and try to array methods.</p>
@@ -46,7 +44,13 @@ const  Console = ({result,testCases,hasForLoop}) => {
         { testCases.map((testCase, index)=>  {
             if(!result[index]) return null;
             const isSelected = ( index === selectedTestIndex );
-            const isSuccess = (testCase.output === result[index]?.ans);
+            let isSuccess = (testCase.output === result[index]?.ans);
+            if(typeof testCase.output === 'object') {
+              isSuccess = JSON.stringify(testCase.output) === JSON.stringify(result[index]?.ans)
+            } else {
+              isSuccess = (testCase.output === result[index]?.ans);
+            }
+          
             return ( 
               <button 
                 className={`p-4 text-lg ${isSuccess ? 'text-success' : 'text-danger'} ${isSelected ? 'border-b-[2px] font-bold': 'shadow-inner' }`}

@@ -10,22 +10,22 @@
           "numberOfRatings": 2
         },
         {
-          "hotelName": "hotel 1",
+          "hotelName": "hotel 2",
           "totalRatings": 30,
           "numberOfRatings": 10
         },
         {
-          "hotelName": "hotel 1",
+          "hotelName": "hotel 3",
           "totalRatings": 40,
           "numberOfRatings": 10
         },
         {
-          "hotelName": "hotel 1",
+          "hotelName": "hotel 4",
           "totalRatings": 10,
           "numberOfRatings": 10
         },
         {
-          "hotelName": "hotel 1",
+          "hotelName": "hotel 5",
           "totalRatings": 21,
           "numberOfRatings": 7
         }
@@ -36,27 +36,231 @@
           "rating": 5
         },
         {
-          "hotelName": "hotel 1",
+          "hotelName": "hotel 2",
           "rating": 3
         },
         {
-          "hotelName": "hotel 1",
+          "hotelName": "hotel 3",
           "rating": 4
         },
         {
-          "hotelName": "hotel 1",
+          "hotelName": "hotel 4",
           "rating": 1
         },
         {
-          "hotelName": "hotel 1",
+          "hotelName": "hotel 5",
           "rating": 3
+        }
+      ]
+    },
+    {
+      "input": [
+        {
+          "hotelName": "Hotel K",
+          "totalRatings": 2,
+          "numberOfRatings": 2
+        },
+        {
+          "hotelName": "Hotel L",
+          "totalRatings": 3,
+          "numberOfRatings": 3
+        },
+        {
+          "hotelName": "Hotel M",
+          "totalRatings": 4,
+          "numberOfRatings": 2
+        },
+        {
+          "hotelName": "Hotel N",
+          "totalRatings": 5,
+          "numberOfRatings": 1
+        },
+        {
+          "hotelName": "Hotel O",
+          "totalRatings": 1,
+          "numberOfRatings": 2
+        }
+      ],
+      "output": [
+        {
+          "hotelName": "Hotel K",
+          "rating": 1
+        },
+        {
+          "hotelName": "Hotel L",
+          "rating": 1
+        },
+        {
+          "hotelName": "Hotel M",
+          "rating": 2
+        },
+        {
+          "hotelName": "Hotel N",
+          "rating": 5
+        },
+        {
+          "hotelName": "Hotel O",
+          "rating": 0.5
+        }
+      ]
+    },
+    {
+      "input": [
+        {
+          "hotelName": "Hotel X",
+          "totalRatings": 27,
+          "numberOfRatings": 11
+        },
+        {
+          "hotelName": "Hotel Y",
+          "totalRatings": 35,
+          "numberOfRatings": 14
+        },
+        {
+          "hotelName": "Hotel Z",
+          "totalRatings": 44,
+          "numberOfRatings": 12
+        },
+        {
+          "hotelName": "Hotel W",
+          "totalRatings": 31,
+          "numberOfRatings": 11
+        },
+        {
+          "hotelName": "Hotel V",
+          "totalRatings": 25,
+          "numberOfRatings": 15
+        }
+      ],
+      "output": [
+        {
+          "hotelName": "Hotel X",
+          "rating": 2.4545454545454546
+        },
+        {
+          "hotelName": "Hotel Y",
+          "rating": 2.5
+        },
+        {
+          "hotelName": "Hotel Z",
+          "rating": 3.6666666666666665
+        },
+        {
+          "hotelName": "Hotel W",
+          "rating": 2.8181818181818183
+        },
+        {
+          "hotelName": "Hotel V",
+          "rating": 1.6666666666666667
+        }
+      ]
+    },
+    {
+      "input": [
+        {
+          "hotelName": "Hotel M",
+          "totalRatings": 45,
+          "numberOfRatings": 12
+        },
+        {
+          "hotelName": "Hotel N",
+          "totalRatings": 40,
+          "numberOfRatings": 15
+        },
+        {
+          "hotelName": "Hotel O",
+          "totalRatings": 36,
+          "numberOfRatings": 13
+        },
+        {
+          "hotelName": "Hotel P",
+          "totalRatings": 50,
+          "numberOfRatings": 12
+        },
+        {
+          "hotelName": "Hotel Q",
+          "totalRatings": 42,
+          "numberOfRatings": 14
+        }
+      ],
+      "output": [
+        {
+          "hotelName": "Hotel M",
+          "rating": 3.75
+        },
+        {
+          "hotelName": "Hotel N",
+          "rating": 2.6666666666666665
+        },
+        {
+          "hotelName": "Hotel O",
+          "rating": 2.769230769230769
+        },
+        {
+          "hotelName": "Hotel P",
+          "rating": 4.166666666666667
+        },
+        {
+          "hotelName": "Hotel Q",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "input": [
+        {
+          "hotelName": "Hotel R",
+          "totalRatings": 60,
+          "numberOfRatings": 15
+        },
+        {
+          "hotelName": "Hotel S",
+          "totalRatings": 55,
+          "numberOfRatings": 12
+        },
+        {
+          "hotelName": "Hotel T",
+          "totalRatings": 52,
+          "numberOfRatings": 13
+        },
+        {
+          "hotelName": "Hotel U",
+          "totalRatings": 50,
+          "numberOfRatings": 11
+        },
+        {
+          "hotelName": "Hotel V",
+          "totalRatings": 47,
+          "numberOfRatings": 14
+        }
+      ],
+      "output": [
+        {
+          "hotelName": "Hotel R",
+          "rating": 4
+        },
+        {
+          "hotelName": "Hotel S",
+          "rating": 4.583333333333333
+        },
+        {
+          "hotelName": "Hotel T",
+          "rating": 4
+        },
+        {
+          "hotelName": "Hotel U",
+          "rating": 4.545454545454546
+        },
+        {
+          "hotelName": "Hotel V",
+          "rating": 3.357142857142857
         }
       ]
     }
   ],
   "body": {
-    "raw": "\n\nGiven an array of objects contain hotel name, total rating points, number of ratings return an array of objects contain hotel name and average rating value.\n\nFor example, \n```js\n[\n    { \n        hotelName: \"hotel 1\", \n        totalRatings: 10 , \n        numberOfRatings: 2 \n    },\n    { \n        hotelName: \"hotel 2\", \n        totalRatings: 30 , \n        numberOfRatings: 10 \n    },\n    { \n        hotelName: \"hotel 3\",\n        totalRatings: 40 ,\n        numberOfRatings: 10 \n    },\n    { \n        hotelName: \"hotel 4\",\n        totalRatings: 10,\n        numberOfRatings: 10 \n    },\n    {\n        hotelName: \"hotel 5\",\n        totalRatings: 21,\n        numberOfRatings: 7 \n    }\n]\n``` \nshould return \n```js\n[\n    { hotelName:\"hotel 1\", rating: 5 },\n    { hotelName:\"hotel 2\", rating: 3 },\n    { hotelName:\"hotel 3\", rating: 4 },\n    { hotelName:\"hotel 4\", rating: 1 },\n    { hotelName:\"hotel 5\", rating: 3 }\n]\n```",
-    "html": "<p>Given an array of objects contain hotel name, total rating points, number of ratings return an array of objects contain hotel name and average rating value.</p>\n<p>For example,</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 1\"</span><span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> <span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">2</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 2\"</span><span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">30</span> <span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 3\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">40</span> <span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 4\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 5\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">21</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">7</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 1\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">5</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 2\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">3</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 3\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">4</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 4\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">1</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 5\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">3</span> <span class=\"token punctuation\">}</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">]</span>\n</span></code></pre>"
+    "raw": "\n\nYour task is to create a function which takes an array of objects contain hotel name, total rating points, number of ratings then return an array of objects contain hotel name and average rating value.\n\nFor example, \n```js\n[\n    { \n        hotelName: \"hotel 1\", \n        totalRatings: 10 , \n        numberOfRatings: 2 \n    },\n    { \n        hotelName: \"hotel 2\", \n        totalRatings: 30 , \n        numberOfRatings: 10 \n    },\n    { \n        hotelName: \"hotel 3\",\n        totalRatings: 40 ,\n        numberOfRatings: 10 \n    },\n    { \n        hotelName: \"hotel 4\",\n        totalRatings: 10,\n        numberOfRatings: 10 \n    },\n    {\n        hotelName: \"hotel 5\",\n        totalRatings: 21,\n        numberOfRatings: 7 \n    }\n]\n``` \nshould return \n```js\n[\n    { hotelName:\"hotel 1\", rating: 5 },\n    { hotelName:\"hotel 2\", rating: 3 },\n    { hotelName:\"hotel 3\", rating: 4 },\n    { hotelName:\"hotel 4\", rating: 1 },\n    { hotelName:\"hotel 5\", rating: 3 }\n]\n```",
+    "html": "<p>Your task is to create a function which takes an array of objects contain hotel name, total rating points, number of ratings then return an array of objects contain hotel name and average rating value.</p>\n<p>For example,</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 1\"</span><span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> <span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">2</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 2\"</span><span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">30</span> <span class=\"token punctuation\">,</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 3\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">40</span> <span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> \n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 4\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">10</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span> <span class=\"token string\">\"hotel 5\"</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">totalRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">21</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">        <span class=\"token literal-property property\">numberOfRatings</span><span class=\"token operator\">:</span> <span class=\"token number\">7</span> \n</span><span class=\"code-line\">    <span class=\"token punctuation\">}</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">]</span>\n</span></code></pre>\n<p>should return</p>\n<pre class=\"language-js\"><code class=\"language-js code-highlight\"><span class=\"code-line\"><span class=\"token punctuation\">[</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 1\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">5</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 2\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">3</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 3\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">4</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 4\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">1</span> <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n</span><span class=\"code-line\">    <span class=\"token punctuation\">{</span> <span class=\"token literal-property property\">hotelName</span><span class=\"token operator\">:</span><span class=\"token string\">\"hotel 5\"</span><span class=\"token punctuation\">,</span> <span class=\"token literal-property property\">rating</span><span class=\"token operator\">:</span> <span class=\"token number\">3</span> <span class=\"token punctuation\">}</span>\n</span><span class=\"code-line\"><span class=\"token punctuation\">]</span>\n</span></code></pre>"
   },
   "_id": "challenge-5.md",
   "_raw": {
